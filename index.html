@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện ảnh tương tác - Truy cập bàn phím</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initialize()">
+    <!-- Sửa lỗi: Không bỏ qua cấp độ thẻ tiêu đề, bắt đầu bằng h1 -->
+    <h1>Thư viện ảnh tương tác</h1>
+    
+    <div id="image">
+        Di chuột hoặc tab qua một hình ảnh bên dưới để hiển thị ở đây.
+    </div>
+
+    <div class="gallery">
+        <!-- 6 Hình ảnh với đầy đủ alt text, onmouseover, onmouseleave, onfocus, onblur -->
+        <img src="https://images.unsplash.com/photo-1506744626753-edaebc518624?w=400&h=300&fit=crop" alt="Phong cảnh núi đồi" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=400&h=300&fit=crop" alt="Thung lũng xanh mướt" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <!-- Sửa lỗi: Hình ảnh thứ ba đã được thêm thuộc tính alt -->
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop" alt="Mặt hồ bình yên" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop" alt="Khu rừng mùa thu" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=400&h=300&fit=crop" alt="Cây cô đơn trong sương" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop" alt="Cánh đồng cỏ xanh" onmouseover="upDate(this)" onmouseleave="unDo()" onfocus="upDate(this)" onblur="unDo()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
